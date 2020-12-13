@@ -12,7 +12,7 @@ atau
 ```
 {
 	"require": {
-		"sholihin/rajaongkirprolaravel": "^2.0",
+		"Sholihin/RajaongkirPro": "^3.0",
 	}
 }
 ```
@@ -22,7 +22,7 @@ Tambahkan service provider ke config/app.php
 'providers' => [
 	....
 	
-	sholihin\rajaongkirprolaravel\RajaOngkirServiceProvider::class,
+	Sholihin\RajaongkirPro\RajaOngkirServiceProvider::class,
 ]
 ```
 
@@ -31,7 +31,7 @@ Tambahkan juga aliasnya ke config/app.php
 'aliases' => [
 	....
 	
-	'RajaOngkir' => sholihin\rajaongkirprolaravel\RajaOngkirFacade::class,
+	'RajaOngkir' => Sholihin\RajaongkirPro\RajaOngkirFacade::class,
 ]
 ```
 
@@ -48,8 +48,8 @@ RAJAONGKIR_APIKEY=isi_api_key_anda_disini
 ```
 atau anda juga dapat langsung melakukan konfigurasi di file rajaongkir.php di folder config seperti kode berikut.
 ```php
-'end_point_api' => 'isi_base_url_api_akun_anda_disini',
-'api_key' => 'isi_api_key_anda_disini',
+'END_POINT_API' => 'isi_base_url_api_akun_anda_disini',
+'API_KEY' => 'isi_api_key_anda_disini',
 ```
 
 **Contoh Route**
