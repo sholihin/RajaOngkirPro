@@ -1,6 +1,6 @@
 <?php
 
-namespace Sholihin\RajaongkirPro\App;
+namespace Sholihin\RajaOngkirPro\App;
 
 class Resi extends Api {
     public function __construct($attributes){

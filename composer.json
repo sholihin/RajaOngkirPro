@@ -1,34 +1,35 @@
 {
-    "name": "Sholihin/RajaongkirPro",
+    "name": "sholihin/rajaongkirpro",
+    "description": "Aplikasi Rajaongkir",
     "type": "library",
-    "description": "Raja Ongkir API Laravel 8",
-    "keywords": [
-        "rajaongkir", "Application Programming Interface", "laravel"
-    ],
-    "homepage": "https://github.com/sholihin/rajaongkirpro",
-    "license": "MIT",
     "authors": [
         {
             "name": "Mohamad Sholihin",
             "email": "mohamad.sholihin.it@gmail.com"
         }
     ],
+    "version": "3.0",
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0"
+    },
     "autoload": {
-    	"psr-4": {
-    		"Sholihin\\RajaongkirPro\\": "src/"
+        "psr-4": {
+            "Sholihin\\RajaOngkirPro\\": "src/"
         }
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "Sholihin\\RajaongkirPro\\RajaOngkirServiceProvider"
-            ],
-            "aliases": {
-                "RajaOngkir": "Sholihin\\RajaongkirPro\\RajaOngkir"
-            }
+          "providers": [
+            "Sholihin\\RajaOngkirPro\\Providers\\RajaOngkirServiceProvider"
+          ],
+          "aliases": {
+            "RajaOngkir": "Sholihin\\RajaOngkirPro\\Helpers\\RajaOngkir"
+          }
         }
-    },
-    "require": {
-        "illuminate/support": "5.8.*|^6.0|^7.0|^8.0"
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sholihin\RajaongkirPro\App;
+namespace Sholihin\RajaOngkirPro\App;
 
 use Exception;
 
@@ -13,8 +13,8 @@ abstract class Api {
 	protected $apiKey;
 
 	public function __construct(){
-		$this->endPointAPI = config('rajaongkir.end_point_api', 'https://pro.rajaongkir.com/api');
-		$this->apiKey = config('rajaongkir.api_key');
+		$this->endPointAPI = 'https://pro.rajaongkir.com/api';
+		$this->apiKey = '69e56d1a26b3184f0057188aa30cf7ad';
 	}
 
 	public function all(){
@@ -56,7 +56,6 @@ abstract class Api {
 
 	protected function GetData(){
 		$curl = curl_init();
-
 		$options = [
 			CURLOPT_URL => $this->endPointAPI."/".$this->method.$this->parameters,
 			CURLOPT_RETURNTRANSFER => true,

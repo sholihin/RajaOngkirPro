@@ -1,12 +1,12 @@
 <?php
 
-namespace Sholihin\RajaongkirPro;
+namespace Sholihin\RajaOngkirPro\Helpers;
 
-use Sholihin\RajaongkirPro\App\Provinsi;
-use Sholihin\RajaongkirPro\App\Kota;
-use Sholihin\RajaongkirPro\App\Kecamatan;
-use Sholihin\RajaongkirPro\App\Cost;
-use Sholihin\RajaongkirPro\App\Resi;
+use Sholihin\RajaOngkirPro\App\Provinsi;
+use Sholihin\RajaOngkirPro\App\Kota;
+use Sholihin\RajaOngkirPro\App\Kecamatan;
+use Sholihin\RajaOngkirPro\App\Cost;
+use Sholihin\RajaOngkirPro\App\Resi;
 
 class RajaOngkir {
 	public function Provinsi(){

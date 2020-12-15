@@ -1,6 +1,6 @@
 <?php
 
-namespace Sholihin\RajaongkirPro\App;
+namespace Sholihin\RajaOngkirPro\App;
 
 class Kecamatan extends Api {
 	protected $method = "subdistrict";
