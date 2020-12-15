@@ -1,4 +1,4 @@
-# rajaongkir API For Laravel 5
+# RajaongkirPro API For Laravel 8
 
 API ini digunakan ( baru tersedia ) untuk type akun starter
 
